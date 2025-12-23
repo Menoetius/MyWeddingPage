@@ -1,0 +1,134 @@
+{
+    "nav": {
+        "home": "Domů",
+        "story": "Náš příběh",
+        "schedule": "Harmonogram",
+        "details": "Detaily",
+        "location": "Lokalita",
+        "accommodation": "Ubytování",
+        "gifts": "Dary",
+        "gallery": "Galerie"
+    },
+    "hero": {
+        "title": "Anetka & Andrejko",
+        "subtitle": "BEREME SE",
+        "date": "16. května 2026",
+        "days": "Dní",
+        "hours": "Hodin",
+        "minutes": "Minut",
+        "seconds": "Sekund",
+        "scrollExplore": "Posuňte pro objevování"
+    },
+    "story": {
+        "title": "Náš příběh",
+        "p1": "Všechno to začalo v srdci hor, kde nás spojila společná láska k dobrodružství a přírodě. To, co začalo jako nevinné povídání u kávy, se brzy změnilo v celoživotní sdílení západů slunce a horských vrcholů.",
+        "p2": "Od naší první túry až po nespočet vzpomínek, které jsme od té doby vytvořili, nás každý krok vedl k tomuto momentu. Rostli jsme společně, podporovali své sny a zjistili, že největší životní dobrodružství jsou ta, která podnikáme ruku v ruce.",
+        "quote": "Domov není místo, je to člověk. A já jsem konečně našel cestu domů."
+    },
+    "details": {
+        "title": "Svatební detaily",
+        "viewMap": "Zobrazit mapu",
+        "viewWebsite": "Navštívit web",
+        "items": [
+            {
+                "title": "Obřad",
+                "time": "15:00",
+                "location": "Kostel sv. Matouše",
+                "address": "Štefana Straku 2, Trenčianska Teplá",
+                "mapUrl": "https://maps.app.goo.gl/FLqTfBxTPzYQc54g7",
+                "websiteUrl": "https://trencianskatepla.fara.sk"
+            },
+            {
+                "title": "Hostina",
+                "time": "17:00",
+                "location": "ATRIUM",
+                "address": "Milana Rastislava Štefánika 375/28, Trenčianska Teplá",
+                "mapUrl": "https://maps.app.goo.gl/Hihavw3RZPqgtyuc9",
+                "websiteUrl": "https://atriumtepla.sk/sk/home"
+            }
+        ]
+    },
+    "schedule": {
+        "title": "Svatební harmonogram",
+        "subtitle": "Sledujte cestu dnem",
+        "events": {
+            "ceremony": "Obřad",
+            "photos": "Rodinné focení",
+            "welcome": "Uvítací drinky",
+            "dinner": "Svatební večeře",
+            "dance": "První tanec",
+            "coffee": "Noční káva"
+        }
+    },
+    "location": {
+        "title": "Lokalita",
+        "gettingThere": "Jak se tam dostat",
+        "description": "Naše svatba se bude konat v Trenčianské Teplé. Obřad i hostina jsou v centru, což usnadňuje přesun mezi místy.",
+        "byCar": "Autem",
+        "parking": "Parkování je k dispozici přímo u místa konání hostiny (ATRIUM). Pro ubytované hosty mají obě ubytování vlastní parkovací místa.",
+        "quote": "Nemůžeme se dočkat, až vás uvidíme!",
+        "findWay": "Najděte cestu",
+        "ceremonyMap": "Mapa obřadu",
+        "receptionMap": "Mapa hostiny"
+    },
+    "accommodation": {
+        "title": "Kde se ubytovat",
+        "subtitle": "Vybrali jsme pro vás naše oblíbená místa v okolí",
+        "bookNow": "Rezervovat pobyt",
+        "hotels": [
+            {
+                "name": "Grand Hotel River Park",
+                "stars": 5,
+                "description": "Luxusní volba s výhledem na Dunaj, v blízkosti svatebních míst.",
+                "amenities": [
+                    "Spa & Wellness",
+                    "Výhled na řeku",
+                    "Zážitková gastronomie"
+                ],
+                "distance": "10 min chůze k obřadu"
+            },
+            {
+                "name": "Sheraton Bratislava Hotel",
+                "stars": 4,
+                "description": "Moderní komfort v srdci městského centra Eurovea.",
+                "amenities": [
+                    "Vnitřní bazén",
+                    "Centrum města",
+                    "Moderní pokoje"
+                ],
+                "distance": "15 min chůze na hostinu"
+            },
+            {
+                "name": "Botel Dunajský Pivovar",
+                "stars": 3,
+                "description": "Unikátní zážitek na lodi s vlastním pivovarem na palubě.",
+                "amenities": [
+                    "Unikátní koncept",
+                    "Vlastní pivovar",
+                    "Výhled na Dunaj"
+                ],
+                "distance": "5 min jízdy k místům konání"
+            }
+        ]
+    },
+    "gifts": {
+        "title": "Dary",
+        "mainTitle": "Vaše přítomnost je pro nás dárkem",
+        "p1": "Nejdůležitější pro nás je, abyste s námi mohli oslavit naši svatbu. Vaše přítomnost je tím největším darem, který si můžeme přát.",
+        "p2": "Pokud byste nás však chtěli uctít darem, příspěvek na naše svatební dobrodružství nebo na náš budoucí domov velmi oceníme.",
+        "registry": "Seznam darů",
+        "wishingWell": "Informace o darech"
+    },
+    "gallery": {
+        "title": "Galerie",
+        "subtitle": "Zachycení našich oblíbených momentů",
+        "viewPhoto": "Zobrazit fotku"
+    },
+    "footer": {
+        "names": "Anetka & Andrejko",
+        "dateLocation": "16. května 2026 • Trenčianska Teplá",
+        "quote": "\"A žili šťastně až do smrti...\"",
+        "thanks": "Děkujeme, že jste součástí našeho příběhu. Nemůžeme se dočkat, až tento speciální den oslavíme se všemi našimi oblíbenými lidmi.",
+        "madeWith": "Vytvořeno s láskou pro náš speciální den"
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "nav": {
+        "home": "Home",
+        "story": "Our Story",
+        "schedule": "Schedule",
+        "details": "Details",
+        "location": "Location",
+        "accommodation": "Accommodation",
+        "gifts": "Gifts",
+        "gallery": "Gallery"
+    },
+    "hero": {
+        "title": "Anetka & Andrejko",
+        "subtitle": "WE'RE GETTING MARRIED",
+        "date": "May 16, 2026",
+        "days": "Days",
+        "hours": "Hours",
+        "minutes": "Minutes",
+        "seconds": "Seconds",
+        "scrollExplore": "Scroll to explore"
+    },
+    "story": {
+        "title": "Our Story",
+        "p1": "It all started in the heart of the mountains, where a shared love for adventure and the Great Outdoors brought us together. What began as a simple coffee chat soon turned into a lifetime of shared sunsets and mountain peaks.",
+        "p2": "From our first hike to the countless memories built since, every step has led us to this moment. We've grown together, supported each other's dreams, and discovered that life's greatest adventures are the ones you take hand in hand.",
+        "quote": "Home isn't a place, it's a person. And I've finally found my way home."
+    },
+    "details": {
+        "title": "The Wedding Details",
+        "viewMap": "View Map",
+        "viewWebsite": "Visit Website",
+        "items": [
+            {
+                "title": "Ceremony",
+                "time": "3:00 PM",
+                "location": "St. Matthew's Church",
+                "address": "Štefana Straku 2, Trenčianska Teplá",
+                "mapUrl": "https://maps.app.goo.gl/FLqTfBxTPzYQc54g7",
+                "websiteUrl": "https://trencianskatepla.fara.sk"
+            },
+            {
+                "title": "Reception",
+                "time": "5:00 PM",
+                "location": "ATRIUM",
+                "address": "Milana Rastislava Štefánika 375/28, Trenčianska Teplá",
+                "mapUrl": "https://maps.app.goo.gl/Hihavw3RZPqgtyuc9",
+                "websiteUrl": "https://atriumtepla.sk/en/home"
+            }
+        ]
+    },
+    "schedule": {
+        "title": "Wedding Schedule",
+        "subtitle": "Follow the day's journey",
+        "events": {
+            "ceremony": "The Ceremony",
+            "photos": "Family Photos",
+            "welcome": "Welcome Drinks",
+            "dinner": "Wedding Dinner",
+            "dance": "The First Dance",
+            "coffee": "Late Night Coffee"
+        }
+    },
+    "location": {
+        "title": "The Location",
+        "gettingThere": "Getting There",
+        "description": "Our wedding will take place in the Trenčianska Teplá. Both the ceremony and reception are centrally located, making it easy to navigate between venues.",
+        "byCar": "By Car",
+        "parking": "Parking is available directly at the ATRIUM reception venue. Additionally, both arranged accommodations offer their own private parking spaces.",
+        "quote": "We can't wait to see you there!",
+        "findWay": "Find Your Way",
+        "ceremonyMap": "Ceremony Map",
+        "receptionMap": "Reception Map"
+    },
+    "accommodation": {
+        "title": "Where to Stay",
+        "subtitle": "We've curated some of our favorite spots nearby",
+        "bookNow": "Book Stay",
+        "hotels": [
+            {
+                "name": "Grand Hotel River Park",
+                "stars": 5,
+                "description": "A luxury option overlooking the Danube river, located near the wedding venues.",
+                "amenities": [
+                    "Spa & Wellness",
+                    "River View",
+                    "Fine Dining"
+                ],
+                "distance": "10 min walk to Ceremony"
+            },
+            {
+                "name": "Sheraton Bratislava Hotel",
+                "stars": 4,
+                "description": "Modern comfort in the heart of the Eurovea urban center.",
+                "amenities": [
+                    "Indoor Pool",
+                    "City Center",
+                    "Modern Rooms"
+                ],
+                "distance": "15 min walk to Reception"
+            },
+            {
+                "name": "Botel Dunajský Pivovar",
+                "stars": 3,
+                "description": "A unique experience staying on a boat with a brewery on board.",
+                "amenities": [
+                    "Unique Concept",
+                    "On-site Brewery",
+                    "Danube View"
+                ],
+                "distance": "5 min drive to Venues"
+            }
+        ]
+    },
+    "gifts": {
+        "title": "Gifts",
+        "mainTitle": "Your Presence is Our Present",
+        "p1": "The most important thing to us is that you can join us for our wedding. Your presence is the greatest gift we could ask for.",
+        "p2": "However, if you wish to honor us with a gift, a contribution towards our honeymoon adventures or our future home together would be warmly appreciated.",
+        "registry": "Our Registry",
+        "wishingWell": "Wishing Well Info"
+    },
+    "gallery": {
+        "title": "Gallery",
+        "subtitle": "Capturing our favorite moments",
+        "viewPhoto": "View Photo"
+    },
+    "footer": {
+        "names": "Anetka & Andrejko",
+        "dateLocation": "May 16, 2026 • Trenčianska Teplá",
+        "quote": "\"And they lived happily ever after...\"",
+        "thanks": "Thank you for being part of our story. We can't wait to celebrate this special day with all of our favorite people.",
+        "madeWith": "Made with love for our special day"
+    }
+}

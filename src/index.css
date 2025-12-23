@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+    --color-paris-blue: #5b8ab5;
+    --color-oil-blue: #322617;
+    --color-champagne: #f7e7ce;
+    --color-bone: #fcf8e8;
+
+    --font-header: "Tangerine", cursive;
+    --font-serif: "Cormorant Garamond", serif;
+}
+
+@layer base {
+    body {
+        @apply bg-bone text-oil-blue font-serif antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-header;
+        color: var(--color-paris-blue);
+    }
+}
+
+@layer utilities {
+    .text-glow {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+}
