@@ -25,7 +25,7 @@ export default function Schedule() {
 
                 <div className="relative">
                     {/* Central Line */}
-                    <div className="absolute left-1/2 top-0 bottom-0 w-px bg-paris-blue/10 transform -translate-x-1/2 hidden md:block" />
+                    <div className="absolute left-1/2 top-0 bottom-0 w-px bg-paris-blue/20 transform -translate-x-1/2 hidden md:block" />
 
                     <div className="space-y-12">
                         {timeline.map((item, index) => (
@@ -38,12 +38,14 @@ export default function Schedule() {
                             >
                                 <div className="flex-1 text-center md:text-left space-y-1 w-full">
                                     <div className={`flex flex-col ${index % 2 === 0 ? 'md:items-start' : 'md:items-end'} items-center`}>
-                                        <span className="text-oil-blue/80 font-serif text-sm tracking-widest">{item.time}</span>
-                                        <h3 className="text-2xl text-paris-blue font-serif italic">{item.event}</h3>
+                                        <div className="bg-paris-blue/5 p-6 rounded-2xl border border-paris-blue/10 w-full max-w-sm hover:shadow-lg transition-shadow duration-300">
+                                            <span className="text-paris-blue font-serif font-bold tracking-widest block mb-2">{item.time}</span>
+                                            <h3 className="text-2xl text-oil-blue font-serif italic">{item.event}</h3>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div className="relative z-10 w-12 h-12 bg-white border border-paris-blue/10 rounded-full flex items-center justify-center text-paris-blue shadow-sm">
+                                <div className="relative z-10 w-12 h-12 bg-white border-2 border-paris-blue rounded-full flex items-center justify-center text-paris-blue shadow-md">
                                     {item.icon}
                                 </div>
 

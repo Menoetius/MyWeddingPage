@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Hero from './components/Hero'
 import Story from './components/Story'
 import Details from './components/Details'
@@ -10,10 +11,12 @@ import Footer from './components/Footer'
 import LanguageSwitcher from './components/LanguageSwitcher'
 
 function App() {
+  const [isUIHidden, setIsUIHidden] = useState(false)
+
   return (
     <main className="min-h-screen font-sans selection:bg-paris-blue/10 selection:text-paris-blue relative scroll-smooth">
       <div className="fixed top-6 right-6 z-[100]">
-        <LanguageSwitcher />
+        <LanguageSwitcher visible={!isUIHidden} />
       </div>
       <Hero />
       <Story />
@@ -22,7 +25,7 @@ function App() {
       <Location />
       <Accommodation />
       <Gifts />
-      <Gallery />
+      <Gallery onLightboxToggle={setIsUIHidden} />
       <Footer />
     </main>
   )

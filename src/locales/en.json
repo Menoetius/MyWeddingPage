@@ -73,41 +73,47 @@
     },
     "accommodation": {
         "title": "Where to Stay",
-        "subtitle": "We've curated some of our favorite spots nearby",
+        "subtitle": "We've curated some of possible spots nearby to stay. You can book them directly from the links provided or find a different place to stay. Feel free to ask us for other recommendations.",
         "bookNow": "Book Stay",
         "hotels": [
             {
-                "name": "Grand Hotel River Park",
-                "stars": 5,
-                "description": "A luxury option overlooking the Danube river, located near the wedding venues.",
-                "amenities": [
-                    "Spa & Wellness",
-                    "River View",
-                    "Fine Dining"
-                ],
-                "distance": "10 min walk to Ceremony"
-            },
-            {
-                "name": "Sheraton Bratislava Hotel",
-                "stars": 4,
-                "description": "Modern comfort in the heart of the Eurovea urban center.",
-                "amenities": [
-                    "Indoor Pool",
-                    "City Center",
-                    "Modern Rooms"
-                ],
-                "distance": "15 min walk to Reception"
-            },
-            {
-                "name": "Botel Dunajský Pivovar",
+                "name": "Dubno Eat & Sleep",
+                "bookingUrl": "https://dubno.sk/",
                 "stars": 3,
-                "description": "A unique experience staying on a boat with a brewery on board.",
+                "description": "One of the newest and most modern hotels in the nearby area.",
                 "amenities": [
-                    "Unique Concept",
-                    "On-site Brewery",
-                    "Danube View"
+                    "Restaurant",
+                    "Free parking",
+                    "Tea/coffee maker in all rooms",
+                    "Very good breakfast"
                 ],
-                "distance": "5 min drive to Venues"
+                "distance": "5 min drive to Reception"
+            },
+            {
+                "name": "Hotel Dynamic",
+                "bookingUrl": "http://www.hoteldynamic.sk/",
+                "stars": 3,
+                "description": "Good value for the low price. Also close to the reception venue.",
+                "amenities": [
+                    "Free parking",
+                    "Fitness centre",
+                    "Breakfast"
+                ],
+                "distance": "5 min drive to Reception"
+            },
+            {
+                "name": "Wellness Hotel Panorama",
+                "bookingUrl": "https://hoteltrenciansketeplice.sk/",
+                "stars": 4,
+                "description": "A bit more pricey, but situated in the center of the spa town of Trenčianske Teplice.",
+                "amenities": [
+                    "Indoor swimming pool",
+                    "Restaurant",
+                    "Private parking",
+                    "Spa and wellness centre",
+                    "Fabulous breakfast"
+                ],
+                "distance": "7 min drive to Reception"
             }
         ]
     },

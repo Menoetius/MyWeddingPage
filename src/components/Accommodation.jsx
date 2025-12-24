@@ -36,7 +36,7 @@ export default function Accommodation() {
 
                                 <div className="flex flex-wrap gap-2 pt-2">
                                     {Array.isArray(hotel.amenities) && hotel.amenities.map((amenity, i) => (
-                                        <span key={i} className="text-[10px] uppercase tracking-widest text-paris-blue/60 border border-paris-blue/20 px-3 py-1 rounded-full bg-white/50">
+                                        <span key={i} className="text-xs uppercase tracking-widest text-paris-blue/70 border border-paris-blue/40 px-3 py-1 rounded-full bg-white/50">
                                             {amenity}
                                         </span>
                                     ))}
@@ -44,14 +44,19 @@ export default function Accommodation() {
                             </div>
 
                             <div className="pt-6 space-y-4 border-t border-paris-blue/5">
-                                <div className="flex items-center gap-2 text-paris-blue/70 text-xs font-serif uppercase tracking-widest">
+                                <div className="flex items-center gap-2 text-paris-blue/80 text-sm font-serif uppercase tracking-widest">
                                     <Bed className="w-3 h-3" />
                                     <span>{hotel.distance}</span>
                                 </div>
-                                <button className="w-full py-3 bg-paris-blue/5 text-paris-blue rounded-xl font-serif text-sm tracking-widest uppercase flex items-center justify-center gap-2 group-hover:bg-paris-blue group-hover:text-white transition-all duration-300">
+                                <a
+                                    href={hotel.bookingUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full py-3 bg-paris-blue/5 text-paris-blue rounded-xl font-serif text-sm tracking-widest uppercase flex items-center justify-center gap-2 group-hover:bg-paris-blue group-hover:text-white transition-all duration-300"
+                                >
                                     <span>{t('accommodation.bookNow')}</span>
                                     <ExternalLink className="w-3 h-3" />
-                                </button>
+                                </a>
                             </div>
                         </div>
                     ))}

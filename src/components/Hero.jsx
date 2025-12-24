@@ -1,9 +1,22 @@
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import featuredPhoto from '../assets/20250711_092721.jpg'
+import { useState, useEffect } from 'react'
+// Load hero image dynamically
+const heroImages = import.meta.glob('../assets/hero/*.{png,jpg,jpeg,webp}', { eager: true })
+const featuredPhoto = Object.values(heroImages)[0]?.default
 
 export default function Hero() {
     const { t } = useTranslation()
+    const [isScrolled, setIsScrolled] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     return (
         <section className="h-screen flex flex-col items-center justify-center bg-bone overflow-hidden relative">
@@ -62,11 +75,11 @@ export default function Hero() {
 
             <motion.div
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 2.5, duration: 1 }}
+                animate={{ opacity: isScrolled ? 0 : 1 }}
+                transition={{ duration: 0.5 }}
                 className="absolute bottom-10 animate-bounce"
             >
-                <span className="text-paris-blue/80 font-serif text-xs tracking-widest uppercase">{t('hero.scrollExplore')}</span>
+                <span className="text-paris-blue/90 font-serif text-sm tracking-widest uppercase">{t('hero.scrollExplore')}</span>
             </motion.div>
         </section>
     )

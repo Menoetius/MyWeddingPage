@@ -1,28 +1,58 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { useState } from 'react'
-import { X } from 'lucide-react'
+import { useState, useCallback, useEffect } from 'react'
+import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 
-// Import relevant assets
-import img3 from '../assets/20240217_095130.jpg'
-import img4 from '../assets/20240219_173604.jpg'
-import img5 from '../assets/20240220_152545.jpg'
-import img6 from '../assets/20240920_115002.jpg'
-import img7 from '../assets/20241015_144852.jpg'
-import img8 from '../assets/20250501_173631.jpg'
+// Load gallery images dynamically
+const galleryImages = import.meta.glob('../assets/gallery/*.{png,jpg,jpeg,webp}', { eager: true })
+const galleryItems = Object.values(galleryImages).map((mod, index) => ({
+    src: mod.default,
+    alt: `Wedding ${index + 1}`
+}))
 
-export default function Gallery() {
+export default function Gallery({ onLightboxToggle }) {
     const { t } = useTranslation()
-    const [selectedImage, setSelectedImage] = useState(null)
+    const [selectedIndex, setSelectedIndex] = useState(null)
 
-    const galleryItems = [
-        { src: img3, alt: "Wedding 3" },
-        { src: img4, alt: "Wedding 4" },
-        { src: img5, alt: "Wedding 5" },
-        { src: img6, alt: "Wedding 6" },
-        { src: img7, alt: "Wedding 7" },
-        { src: img8, alt: "Wedding 8" },
-    ]
+    // Ensure we don't try to access index out of bounds if images change
+    useEffect(() => {
+        if (selectedIndex !== null && selectedIndex >= galleryItems.length) {
+            setSelectedIndex(null)
+        }
+    }, [galleryItems.length, selectedIndex])
+
+    const handleImageSelect = (index) => {
+        setSelectedIndex(index)
+        onLightboxToggle(true)
+    }
+
+    const handleClose = () => {
+        setSelectedIndex(null)
+        onLightboxToggle(false)
+    }
+
+    const handleNext = useCallback((e) => {
+        e?.stopPropagation()
+        setSelectedIndex((prev) => (prev + 1) % galleryItems.length)
+    }, [galleryItems.length])
+
+    const handlePrev = useCallback((e) => {
+        e?.stopPropagation()
+        setSelectedIndex((prev) => (prev - 1 + galleryItems.length) % galleryItems.length)
+    }, [galleryItems.length])
+
+    useEffect(() => {
+        if (selectedIndex === null) return
+
+        const handleKeyDown = (e) => {
+            if (e.key === 'ArrowRight') handleNext()
+            if (e.key === 'ArrowLeft') handlePrev()
+            if (e.key === 'Escape') handleClose()
+        }
+
+        window.addEventListener('keydown', handleKeyDown)
+        return () => window.removeEventListener('keydown', handleKeyDown)
+    }, [selectedIndex, handleNext, handlePrev])
 
     return (
         <section id="gallery" className="py-24 bg-white px-4">
@@ -42,7 +72,7 @@ export default function Gallery() {
                             transition={{ delay: index * 0.1, duration: 0.8 }}
                             viewport={{ once: true }}
                             className="relative group cursor-pointer"
-                            onClick={() => setSelectedImage(item)}
+                            onClick={() => handleImageSelect(index)}
                         >
                             <div className="absolute inset-0 bg-paris-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl z-10 flex items-center justify-center">
                                 <span className="text-white font-serif italic tracking-widest uppercase text-sm">{t('gallery.viewPhoto')}</span>
@@ -60,26 +90,43 @@ export default function Gallery() {
             </div>
 
             <AnimatePresence>
-                {selectedImage && (
+                {selectedIndex !== null && (
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        onClick={() => setSelectedImage(null)}
+                        onClick={handleClose}
                         className="fixed inset-0 bg-paris-blue/90 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
                     >
                         <button
-                            onClick={() => setSelectedImage(null)}
-                            className="absolute top-4 right-4 text-white hover:text-champagne transition-colors"
+                            onClick={handleClose}
+                            className="absolute top-4 right-4 text-white hover:text-champagne transition-colors z-50"
                         >
                             <X className="w-8 h-8" />
                         </button>
+
+                        <button
+                            onClick={handlePrev}
+                            className="absolute left-4 text-white hover:text-champagne transition-colors p-2 z-50"
+                        >
+                            <ChevronLeft className="w-10 h-10" />
+                        </button>
+
+                        <button
+                            onClick={handleNext}
+                            className="absolute right-4 text-white hover:text-champagne transition-colors p-2 z-50"
+                        >
+                            <ChevronRight className="w-10 h-10" />
+                        </button>
+
                         <motion.img
+                            key={selectedIndex}
                             initial={{ scale: 0.9, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             exit={{ scale: 0.9, opacity: 0 }}
-                            src={selectedImage.src}
-                            alt={selectedImage.alt}
+                            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                            src={galleryItems[selectedIndex].src}
+                            alt={galleryItems[selectedIndex].alt}
                             className="max-w-full max-h-[90vh] rounded-lg shadow-2xl"
                             onClick={(e) => e.stopPropagation()}
                         />

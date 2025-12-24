@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import storyPhoto from '../assets/20220527_203707_1.jpg'
+// Load story image dynamically
+const storyImages = import.meta.glob('../assets/story/*.{png,jpg,jpeg,webp}', { eager: true })
+const storyPhoto = Object.values(storyImages)[0]?.default
 
 export default function Story() {
     const { t } = useTranslation()

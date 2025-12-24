@@ -73,41 +73,47 @@
     },
     "accommodation": {
         "title": "Kde se ubytovat",
-        "subtitle": "Vybrali jsme pro vás naše oblíbená místa v okolí",
+        "subtitle": "Vybrali jsme pro vás několik možností ubytování v okolí. Můžete si je rezervovat přímo přes uvedené odkazy nebo si najít jiné místo. Klidně se nás zeptejte na další doporučení.",
         "bookNow": "Rezervovat pobyt",
         "hotels": [
             {
-                "name": "Grand Hotel River Park",
-                "stars": 5,
-                "description": "Luxusní volba s výhledem na Dunaj, v blízkosti svatebních míst.",
+                "name": "Dubno Eat & Sleep",
+                "bookingUrl": "https://dubno.sk/",
+                "stars": 3,
+                "description": "Jeden z nejnovějších a nejmodernějších hotelů v blízkém okolí.",
                 "amenities": [
-                    "Spa & Wellness",
-                    "Výhled na řeku",
-                    "Zážitková gastronomie"
+                    "Restaurace",
+                    "Parkování zdarma",
+                    "Čaj/kávovar na pokoji",
+                    "Velmi dobrá snídaně"
                 ],
-                "distance": "10 min chůze k obřadu"
+                "distance": "5 min autem na hostinu"
             },
             {
-                "name": "Sheraton Bratislava Hotel",
+                "name": "Hotel Dynamic",
+                "bookingUrl": "http://www.hoteldynamic.sk/",
+                "stars": 3,
+                "description": "Dobrý poměr ceny a kvality. Také blízko místa hostiny.",
+                "amenities": [
+                    "Parkování zdarma",
+                    "Fitness centrum",
+                    "Snídaně"
+                ],
+                "distance": "5 min autem na hostinu"
+            },
+            {
+                "name": "Wellness Hotel Panorama",
+                "bookingUrl": "https://hoteltrenciansketeplice.sk/",
                 "stars": 4,
-                "description": "Moderní komfort v srdci městského centra Eurovea.",
+                "description": "Trochu dražší, ale nachází se v centru lázeňského města Trenčianske Teplice.",
                 "amenities": [
                     "Vnitřní bazén",
-                    "Centrum města",
-                    "Moderní pokoje"
+                    "Restaurace",
+                    "Soukromé parkování",
+                    "Wellness centrum",
+                    "Vynikající snídaně"
                 ],
-                "distance": "15 min chůze na hostinu"
-            },
-            {
-                "name": "Botel Dunajský Pivovar",
-                "stars": 3,
-                "description": "Unikátní zážitek na lodi s vlastním pivovarem na palubě.",
-                "amenities": [
-                    "Unikátní koncept",
-                    "Vlastní pivovar",
-                    "Výhled na Dunaj"
-                ],
-                "distance": "5 min jízdy k místům konání"
+                "distance": "7 min autem na hostinu"
             }
         ]
     },
