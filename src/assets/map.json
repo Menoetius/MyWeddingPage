@@ -1,0 +1,89 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.1184238,
+                    48.9325934,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Kostel sv. Matouše",
+                "styleUrl": "#icon-1670-0288D1-nodesc",
+                "styleHash": "72c6a2e7",
+                "styleMapHash": {
+                    "normal": "#icon-1670-0288D1-nodesc-normal",
+                    "highlight": "#icon-1670-0288D1-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.1190236,
+                    48.9340736,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "ATRIUM Reštaurácia a Penzión",
+                "styleUrl": "#icon-1517-097138-nodesc",
+                "styleHash": "2529d8ed",
+                "styleMapHash": {
+                    "normal": "#icon-1517-097138-nodesc-normal",
+                    "highlight": "#icon-1517-097138-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.1190236,
+                    48.9340736,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "ATRIUM Reštaurácia a Penzión",
+                "styleUrl": "#icon-1602-A52714-nodesc",
+                "styleHash": "1050cb38",
+                "styleMapHash": {
+                    "normal": "#icon-1602-A52714-nodesc-normal",
+                    "highlight": "#icon-1602-A52714-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.1172517,
+                    48.9313249,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Motorest Conti",
+                "styleUrl": "#icon-1602-E65100-nodesc",
+                "styleHash": "107e66da",
+                "styleMapHash": {
+                    "normal": "#icon-1602-E65100-nodesc-normal",
+                    "highlight": "#icon-1602-E65100-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        }
+    ]
+}
