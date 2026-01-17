@@ -48,15 +48,17 @@ export default function Accommodation() {
                                     <Bed className="w-3 h-3" />
                                     <span>{hotel.distance}</span>
                                 </div>
-                                <a
-                                    href={hotel.bookingUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="w-full py-3 bg-paris-blue/5 text-paris-blue rounded-xl font-serif text-sm tracking-widest uppercase flex items-center justify-center gap-2 group-hover:bg-paris-blue group-hover:text-white transition-all duration-300"
-                                >
-                                    <span>{t('accommodation.bookNow')}</span>
-                                    <ExternalLink className="w-3 h-3" />
-                                </a>
+                                {hotel.bookingUrl && (
+                                    <a
+                                        href={hotel.bookingUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-full py-3 bg-paris-blue/5 text-paris-blue rounded-xl font-serif text-sm tracking-widest uppercase flex items-center justify-center gap-2 group-hover:bg-paris-blue group-hover:text-white transition-all duration-300"
+                                    >
+                                        <span>{t('accommodation.bookNow')}</span>
+                                        <ExternalLink className="w-3 h-3" />
+                                    </a>
+                                )}
                             </div>
                         </div>
                     ))}

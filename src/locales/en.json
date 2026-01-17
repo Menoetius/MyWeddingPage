@@ -21,9 +21,10 @@
     },
     "story": {
         "title": "Our Story",
-        "p1": "It all started in the heart of the mountains, where a shared love for adventure and the Great Outdoors brought us together. What began as a simple coffee chat soon turned into a lifetime of shared sunsets and mountain peaks.",
-        "p2": "From our first hike to the countless memories built since, every step has led us to this moment. We've grown together, supported each other's dreams, and discovered that life's greatest adventures are the ones you take hand in hand.",
-        "quote": "Home isn't a place, it's a person. And I've finally found my way home."
+        "p1": "It all started at work. What at first seemed like innocent small talk soon turned into a lifetime of sharing sunsets, mountain peaks – and also game nights full of board games and flying discs on the disc golf course.",
+        "p2": "From our first hike to the countless memories we've collected along the way, every step naturally led us here. We alternated mountain trails with game boards, fairways with the living room, and found that it doesn't matter if we're climbing a peak, fighting for victory during game night, or looking for a disc in the bushes.",
+        "p3": "We grew together, supported our dreams, and realized that life's greatest adventures are the ones we take hand in hand.",
+        "quote": "Home isn't a place, it's a person. And together we've found our way home."
     },
     "details": {
         "title": "The Wedding Details",
@@ -53,11 +54,16 @@
         "subtitle": "Follow the day's journey",
         "events": {
             "ceremony": "The Ceremony",
-            "photos": "Family Photos",
-            "welcome": "Welcome Drinks",
+            "groupPhoto": "Group photo in front of the church",
+            "moveToReception": "Move to Reception",
             "dinner": "Wedding Dinner",
             "dance": "The First Dance",
-            "coffee": "Late Night Coffee"
+            "cakeCutting": "Cake Cutting",
+            "couplePhotos": "Photos with wedding couple",
+            "games": "Wedding games",
+            "buffet": "Evening buffet",
+            "cepcenie": "Traditional wedding ritual",
+            "freeEntertainment": "Free dancing"
         }
     },
     "location": {
@@ -73,9 +79,35 @@
     },
     "accommodation": {
         "title": "Where to Stay",
-        "subtitle": "We've curated some of possible spots nearby to stay. You can book them directly from the links provided or find a different place to stay. Feel free to ask us for other recommendations.",
+        "subtitle": "We have reserved all rooms for our family from Moravia at the reception venue and the nearby Pension Conti. For other guests, we recommend checking Dubno Eat & Sleep. A shuttle service will be available after the wedding. If we can help you with anything, just let us know — we'd be happy to assist.",
         "bookNow": "Book Stay",
         "hotels": [
+            {
+                "name": "Penzión ATRIUM",
+                "stars": 3,
+                "description": "Accommodation directly at the reception venue.",
+                "amenities": [
+                    "Free parking",
+                    "Free WiFi",
+                    "Family rooms",
+                    "Bar",
+                    "Breakfast"
+                ],
+                "distance": "directly at venue"
+            },
+            {
+                "name": "Penzión Conti",
+                "stars": 3,
+                "description": "Cozy guest house near the center.",
+                "amenities": [
+                    "Free parking",
+                    "Free WiFi",
+                    "Restaurant",
+                    "Family rooms",
+                    "Tea/coffee maker in all rooms"
+                ],
+                "distance": "7 min walk"
+            },
             {
                 "name": "Dubno Eat & Sleep",
                 "bookingUrl": "https://dubno.sk/",
@@ -88,32 +120,6 @@
                     "Very good breakfast"
                 ],
                 "distance": "5 min drive to Reception"
-            },
-            {
-                "name": "Hotel Dynamic",
-                "bookingUrl": "http://www.hoteldynamic.sk/",
-                "stars": 3,
-                "description": "Good value for the low price. Also close to the reception venue.",
-                "amenities": [
-                    "Free parking",
-                    "Fitness centre",
-                    "Breakfast"
-                ],
-                "distance": "5 min drive to Reception"
-            },
-            {
-                "name": "Wellness Hotel Panorama",
-                "bookingUrl": "https://hoteltrenciansketeplice.sk/",
-                "stars": 4,
-                "description": "A bit more pricey, but situated in the center of the spa town of Trenčianske Teplice.",
-                "amenities": [
-                    "Indoor swimming pool",
-                    "Restaurant",
-                    "Private parking",
-                    "Spa and wellness centre",
-                    "Fabulous breakfast"
-                ],
-                "distance": "7 min drive to Reception"
             }
         ]
     },

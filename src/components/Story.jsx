@@ -28,6 +28,9 @@ export default function Story() {
                         <p>
                             {t('story.p2')}
                         </p>
+                        <p>
+                            {t('story.p3')}
+                        </p>
                         <p className="italic font-medium text-oil-blue">
                             "{t('story.quote')}"
                         </p>

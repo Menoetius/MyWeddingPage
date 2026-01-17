@@ -21,9 +21,10 @@
     },
     "story": {
         "title": "Náš příběh",
-        "p1": "Všechno to začalo v srdci hor, kde nás spojila společná láska k dobrodružství a přírodě. To, co začalo jako nevinné povídání u kávy, se brzy změnilo v celoživotní sdílení západů slunce a horských vrcholů.",
-        "p2": "Od naší první túry až po nespočet vzpomínek, které jsme od té doby vytvořili, nás každý krok vedl k tomuto momentu. Rostli jsme společně, podporovali své sny a zjistili, že největší životní dobrodružství jsou ta, která podnikáme ruku v ruce.",
-        "quote": "Domov není místo, je to člověk. A já jsem konečně našel cestu domů."
+        "p1": "Všechno to začalo ve společné práci. To, co nejdřív vypadalo jako nevinné povídání, se poměrně rychle proměnilo v celoživotní sdílení západů slunce, horských vrcholů – a také herních večerů plných deskovek a létajících disků na discgolfu.",
+        "p2": "Od naší první túry až po nespočet vzpomínek, které jsme po cestě nasbírali, nás každý další krok přirozeně vedl až sem. Střídali jsme horské stezky s herními plány, fairwaye s obývákem a zjistili jsme, že je úplně jedno, jestli zrovna šplháme na vrchol, bojujeme o vítězství v deskovce, nebo hledáme disk v křoví.",
+        "p3": "Rostli jsme společně, podporovali své sny a pochopili, že ta největší životní dobrodružství jsou ta, která podnikáme ruku v ruce.",
+        "quote": "Domov není místo, ale člověk. A my jsme společně našli cestu domů."
     },
     "details": {
         "title": "Svatební detaily",
@@ -53,11 +54,16 @@
         "subtitle": "Sledujte cestu dnem",
         "events": {
             "ceremony": "Obřad",
-            "photos": "Rodinné focení",
-            "welcome": "Uvítací drinky",
+            "groupPhoto": "Společná fotka před kostelem",
+            "moveToReception": "Přesun na hostinu",
             "dinner": "Svatební večeře",
             "dance": "První tanec",
-            "coffee": "Noční káva"
+            "cakeCutting": "Krájení dortu",
+            "couplePhotos": "Focení s novomanželi",
+            "games": "Svatební hry",
+            "buffet": "Večerní raut",
+            "cepcenie": "Čepčení",
+            "freeEntertainment": "Volná zábava"
         }
     },
     "location": {
@@ -73,9 +79,35 @@
     },
     "accommodation": {
         "title": "Kde se ubytovat",
-        "subtitle": "Vybrali jsme pro vás několik možností ubytování v okolí. Můžete si je rezervovat přímo přes uvedené odkazy nebo si najít jiné místo. Klidně se nás zeptejte na další doporučení.",
+        "subtitle": "V místě hostiny i v nedalekém ubytování Conti máme zarezervovány všechny pokoje pro naši rodinu z Moravy. Ostatním hostům doporučujeme ubytování v Dubno Eat & Sleep. Po svatbě bude zajištěn rozvoz auty. Kdybychom vám mohli s čímkoliv pomoci, dejte nám vědět — moc rádi poradíme.",
         "bookNow": "Rezervovat pobyt",
         "hotels": [
+            {
+                "name": "Penzión ATRIUM",
+                "stars": 3,
+                "description": "Ubytování přímo v místě konání hostiny.",
+                "amenities": [
+                    "Parkování zdarma",
+                    "Wi-Fi zdarma",
+                    "Rodinné pokoje",
+                    "Bar",
+                    "Snídaně"
+                ],
+                "distance": "přímo na místě"
+            },
+            {
+                "name": "Penzión Conti",
+                "stars": 3,
+                "description": "Příjemný penzion v blízkosti centra.",
+                "amenities": [
+                    "Parkování zdarma",
+                    "Wi-Fi zdarma",
+                    "Restaurace",
+                    "Rodinné pokoje",
+                    "Čaj/kávovar na pokoji"
+                ],
+                "distance": "7 min pěšky"
+            },
             {
                 "name": "Dubno Eat & Sleep",
                 "bookingUrl": "https://dubno.sk/",
@@ -88,32 +120,6 @@
                     "Velmi dobrá snídaně"
                 ],
                 "distance": "5 min autem na hostinu"
-            },
-            {
-                "name": "Hotel Dynamic",
-                "bookingUrl": "http://www.hoteldynamic.sk/",
-                "stars": 3,
-                "description": "Dobrý poměr ceny a kvality. Také blízko místa hostiny.",
-                "amenities": [
-                    "Parkování zdarma",
-                    "Fitness centrum",
-                    "Snídaně"
-                ],
-                "distance": "5 min autem na hostinu"
-            },
-            {
-                "name": "Wellness Hotel Panorama",
-                "bookingUrl": "https://hoteltrenciansketeplice.sk/",
-                "stars": 4,
-                "description": "Trochu dražší, ale nachází se v centru lázeňského města Trenčianske Teplice.",
-                "amenities": [
-                    "Vnitřní bazén",
-                    "Restaurace",
-                    "Soukromé parkování",
-                    "Wellness centrum",
-                    "Vynikající snídaně"
-                ],
-                "distance": "7 min autem na hostinu"
             }
         ]
     },
